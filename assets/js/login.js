@@ -65,7 +65,7 @@ $(function() {
         $.ajax({
             method: 'POST',
             // url: 'http://ajax.frontend.itheima.net/api/login',
-            url: 'api/login',
+            url: '/api/login',
             // serialize获取form表单元素里面的内容
             data: $(this).serialize(),
             success: function(res) {
