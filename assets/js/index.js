@@ -3,11 +3,9 @@ $(function() {
     getUserInfo();
     // console.warn("警告");
     // console.error('报错');
-});
-
-// 2.退出
-var layer = layui.layer;
-$("#btn_logout").on('click', function() {
+    // 2.退出
+    var layer = layui.layer;
+    $("#btn_logout").on('click', function() {
         //框架提供的询问框
         layer.confirm('是否确认退出?', {
             icon: 3,
@@ -22,8 +20,11 @@ $("#btn_logout").on('click', function() {
             layer.close(index)
         });
     })
-    // 获取用户信息（封装入口函数的外面）
-    // 原因：后面其他的页面要调用
+});
+
+
+// 获取用户信息（封装入口函数的外面）
+// 原因：后面其他的页面要调用
 function getUserInfo() {
     // 发送ajax
     $.ajax({

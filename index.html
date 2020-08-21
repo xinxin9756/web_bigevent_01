@@ -26,9 +26,9 @@
                     </a>
                     <!-- <span class="text-avatar">A</span> -->
                     <dl class="layui-nav-child">
-                        <dd><a href="">基本资料</a></dd>
-                        <dd><a href="">更换头像</a></dd>
-                        <dd><a href="">重置密码</a></dd>
+                        <dd><a target="fm" href="/user/user_info.html">基本资料</a></dd>
+                        <dd> <a target="fm" href="/user/user_avatar.html">更换头像</a></dd>
+                        <dd><a target="fm" href="/user/user_pwd.html">重置密码</a></dd>
                         <dd><a href="">安全设置</a></dd>
                     </dl>
                 </li>
@@ -65,9 +65,21 @@
                     <li class="layui-nav-item">
                         <a href="javascript:;"><span class="iconfont icon-user"></span>个人中心</a>
                         <dl class="layui-nav-child">
-                            <dd><a href="javascript:;"><i class="layui-icon layui-icon-user"></i>基本资料</a></dd>
-                            <dd><a href="javascript:;"><i class="layui-icon layui-icon-face-smile-b"></i>更换头像</a></dd>
-                            <dd><a href=""><i class="layui-icon layui-icon-password"></i>重置密码</a></dd>
+                            <dd>
+                                <a target="fm" href="/user/user_info.html">
+                                    <i class="layui-icon layui-icon-user"></i>基本资料
+                                </a>
+                            </dd>
+                            <dd>
+                                <a target="fm" href="/user/user_avatar.html">
+                                    <i class="layui-icon layui-icon-face-smile-b"></i>更换头像
+                                </a>
+                            </dd>
+                            <dd>
+                                <a target="fm" href="/user/user_pwd.html">
+                                    <i class="layui-icon layui-icon-password"></i>重置密码
+                                </a>
+                            </dd>
                         </dl>
                     </li>
                     <li class="layui-nav-item"><a href="">云市场</a></li>
@@ -78,7 +90,7 @@
 
         <div class="layui-body">
             <!-- 内容主体区域 -->
-            <iframe src="/home/dashboard.html" frameborder="0"></iframe>
+            <iframe src="/home/dashboard.html" name="fm" frameborder="0"></iframe>
         </div>
 
         <div class="layui-footer">
